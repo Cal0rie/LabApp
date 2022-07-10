@@ -1,1 +1,0 @@
-<view class="{{['u-col', a]}}" style="{{'padding:' + b + ';' + ('margin-left:' + c) + ';' + ('flex:' + d) + ';' + ('align-items:' + e) + ';' + ('justify-content:' + f) + ';' + ('text-align:' + g)}}" bindtap="{{h}}"><slot></slot></view>

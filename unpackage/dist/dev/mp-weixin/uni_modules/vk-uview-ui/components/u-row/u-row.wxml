@@ -1,1 +1,0 @@
-<view class="u-row" style="{{'align-items:' + a + ';' + ('justify-content:' + b)}}" bindtap="{{c}}"><slot/></view>
