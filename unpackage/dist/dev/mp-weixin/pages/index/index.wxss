@@ -50,6 +50,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		padding: 15px;
 }
 .logo.data-v-57280228 {
 		height: 200rpx;

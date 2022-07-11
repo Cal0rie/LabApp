@@ -9,12 +9,19 @@ const _sfc_main = {
   },
   onLoad() {
   },
-  methods: {}
+  methods: {
+    btnScan() {
+      common_vendor.index.navigateTo({
+        url: "/pages/index/choose"
+      });
+    }
+  }
 };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
     a: common_vendor.t($data.title1),
-    b: common_vendor.t($data.title2)
+    b: common_vendor.t($data.title2),
+    c: common_vendor.o((...args) => $options.btnScan && $options.btnScan(...args))
   };
 }
 var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-57280228"], ["__file", "D:/Programs/LabApp/pages/index/index.vue"]]);

@@ -32,6 +32,7 @@ if (!Math) {
   "./pages/index/index.js";
   "./pages/auth/login.js";
   "./pages/auth/register.js";
+  "./pages/index/choose.js";
 }
 const _sfc_main = {
   onLaunch: function() {

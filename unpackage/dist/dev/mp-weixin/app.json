@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/auth/login",
-    "pages/auth/register"
+    "pages/auth/register",
+    "pages/index/choose"
   ],
   "window": {
     "navigationBarTextStyle": "black",

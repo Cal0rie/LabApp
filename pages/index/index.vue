@@ -6,7 +6,7 @@
 			class="text-area"><text class="title">{{title2}}</text>
 		</view>
 		<view class='btns'>
-		<button class='scan'>
+		<button @click="btnScan" class='scan'>
 			<p class='chi'>扫码登记信息，开启柜门</p>
 			<p class='eng'>Scan QR-Code</p>
 			</button>
@@ -48,7 +48,11 @@
 
 		},
 		methods: {
-
+			btnScan(){
+				uni.navigateTo({
+					url:'/pages/index/choose'
+				})
+			}
 		}
 	}
 </script>
@@ -106,6 +110,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		padding: 15px;
 	}
 
 	.logo {
