@@ -17,4 +17,12 @@
 
 <style>
 	/*每个页面公共css */
+	.Background{
+		z-index: -1;
+		position: fixed;
+		width: 1000rpx;
+		height: 969rpx;
+		transform:translate(-400rpx);
+		opacity: 0.15;
+	}
 </style>
