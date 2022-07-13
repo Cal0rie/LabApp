@@ -33,6 +33,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/borrow/borrow",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

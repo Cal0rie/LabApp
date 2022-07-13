@@ -131,5 +131,6 @@
 	.title {
 		font-size: 45rpx;
 		color: #000000;
+		font-weight: 600;
 	}
 </style>

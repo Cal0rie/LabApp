@@ -7,7 +7,7 @@
 			class="text-area"><text class="title">{{title2}}</text>
 		</view>
 		<view class='btns'>
-			<button class='btn' @click="btnBorrow" style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
+			<button class='btn' style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
 				<p class='chi'>借用</p>
 				<p class='eng'>Borrow</p>
 			</button>
@@ -36,18 +36,14 @@
 		data() {
 			return {
 				title1: 'Management System',
-				title2: '实验室器材管理系统'
+				title2: '柜门已开启，请拿取所需器材'
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-			btnBorrow(){
-				uni.navigateTo({
-					url:'/pages/borrow/borrow'
-				})
-			},
+
 		}
 	}
 </script>

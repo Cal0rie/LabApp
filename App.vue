@@ -25,4 +25,10 @@
 		transform:translate(-400rpx);
 		opacity: 0.15;
 	}
+	
+	.title {
+		font-size: 45rpx;
+		color: #000000;
+		font-weight: 600;
+	}
 </style>
