@@ -42,6 +42,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/borrow/borrowFinish",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

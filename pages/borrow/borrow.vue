@@ -2,18 +2,19 @@
 	<img class='Background' src="/static/校徽.webp">
 	<view class="content">
 		<view style='margin-top:300rpx' class="text-area">
-			<text class="title">{{title1}}</text></view>
+			<text class="title">{{title1}}</text>
 			<view style='margin-top:20rpx'
 			class="text-area"><text class="title">{{title2}}</text>
+			</view>
 		</view>
 		<view class='btns'>
-			<button class='btn' style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
-				<p class='chi'>借用</p>
-				<p class='eng'>Borrow</p>
+			<button @click="finish" class='btn' style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
+				<p class='chi'>拿取完成</p>
+				<p class='eng'>Finish</p>
 			</button>
 			<button class='btn' style='background-image: linear-gradient(to bottom right, #2FDF71, #60ea98);'>
-				<p class='chi'>归还</p>
-				<p class='eng'>Return</p>
+				<p class='chi'>取消拿取</p>
+				<p class='eng'>Cancel</p>
 				</button>
 		</view>
 		
@@ -35,7 +36,7 @@
 	export default {
 		data() {
 			return {
-				title1: 'Management System',
+				title1: 'Please Get The Necessary Equipment',
 				title2: '柜门已开启，请拿取所需器材'
 			}
 		},
@@ -43,12 +44,19 @@
 
 		},
 		methods: {
-
+			finish(){
+				uni.navigateTo({
+					url:"/pages/borrow/borrowFinish"
+				})
+			}
 		}
 	}
 </script>
 
 <style scoped>
+	.text-area{
+		text-align: center;
+	}
 	.eng{
 		
 	}

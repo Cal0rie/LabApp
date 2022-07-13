@@ -31,4 +31,18 @@
 		color: #000000;
 		font-weight: 600;
 	}
+	
+	.single-btn {
+		height: 200rpx;
+		background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);
+		color: white;
+		text-align: left;
+		width: 50%;
+		border-radius: 30rpx;
+		border-style: none;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		font-weight: 600;
+	}
 </style>
