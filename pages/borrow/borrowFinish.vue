@@ -88,8 +88,8 @@
 				})
 			},
 			confirm() {
-				uni.navigateTo({
-					url:"/pages/index/index"
+				uni.redirectTo({
+					url:'/pages/index/index'
 				})
 			}
 		}
@@ -97,20 +97,6 @@
 </script>
 
 <style scoped>
-	.center-text {
-		font-size: 50rpx;
-		font-weight: 600;
-		text-align: left;
-		align-self: flex-start;
-		padding: 20rpx;
-	}
-
-	.eng {}
-
-	.chi {
-		margin-bottom: -30rpx;
-	}
-
 	.row {
 		display: flex;
 	}

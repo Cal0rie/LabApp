@@ -17,6 +17,13 @@
 
 <style>
 	/*每个页面公共css */
+	.center-text {
+		font-size: 50rpx;
+		font-weight: 600;
+		text-align: left;
+		align-self: flex-start;
+		padding: 20rpx;
+	}
 	.Background{
 		z-index: -1;
 		position: fixed;

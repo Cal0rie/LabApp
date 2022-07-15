@@ -45,7 +45,7 @@
 		methods: {
 			btnBorrow(){
 				uni.navigateTo({
-					url:'/pages/borrow/borrow'
+					url:'/pages/borrow/borrowRegister'
 				})
 			},
 		}
