@@ -45,4 +45,23 @@
 		flex-direction: column;
 		font-weight: 600;
 	}
+	.column-btn{
+		margin-bottom: 30rpx;
+		height: 130px;
+		color: white;
+		width: 70%;
+		border-radius: 30rpx;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.eng{
+		margin-left: 15rpx;
+	}
+	.chi{
+		font-weight: 600;
+		margin-left: 15rpx;
+		margin-bottom: -30rpx;
+	}
 </style>

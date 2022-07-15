@@ -8,11 +8,11 @@
 			</view>
 		</view>
 		<view class='btns'>
-			<button @click="finish" class='btn' style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
+			<button @click="finish" class='column-btn' style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
 				<p class='chi'>拿取完成</p>
 				<p class='eng'>Finish</p>
 			</button>
-			<button class='btn' style='background-image: linear-gradient(to bottom right, #2FDF71, #60ea98);'>
+			<button class='column-btn' style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
 				<p class='chi'>取消拿取</p>
 				<p class='eng'>Cancel</p>
 				</button>
@@ -72,16 +72,6 @@
 		width: 90%;
 		margin-top: 100rpx;
 		text-align: left;
-	}
-	.btn{
-		margin-bottom: 30rpx;
-		height: 130px;
-		color: white;
-		width: 70%;
-		border-radius: 30rpx;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
 	}
 	.content {
 		display: flex;

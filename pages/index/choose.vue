@@ -7,11 +7,11 @@
 			class="text-area"><text class="title">{{title2}}</text>
 		</view>
 		<view class='btns'>
-			<button class='btn' @click="btnBorrow" style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
+			<button class='column-btn' @click="btnBorrow" style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
 				<p class='chi'>借用</p>
 				<p class='eng'>Borrow</p>
 			</button>
-			<button class='btn' style='background-image: linear-gradient(to bottom right, #2FDF71, #60ea98);'>
+			<button class='column-btn' style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
 				<p class='chi'>归还</p>
 				<p class='eng'>Return</p>
 				</button>
@@ -68,16 +68,6 @@
 		width: 90%;
 		margin-top: 100rpx;
 		text-align: left;
-	}
-	.btn{
-		margin-bottom: 30rpx;
-		height: 130px;
-		color: white;
-		width: 70%;
-		border-radius: 30rpx;
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
 	}
 	.content {
 		display: flex;

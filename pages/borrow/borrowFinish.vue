@@ -10,7 +10,7 @@
 			您已借用：
 		</view>
 		<view class="cards">
-			<view @click="choose(index)" class='card' v-for="(item, index) in borrowedEquipment" :key="index">
+			<view @click="" class='card' v-for="(item, index) in borrowedEquipment" :key="index">
 
 				<!-- <view class="location-text" style="">设备编号</view> -->
 				<view style="flex-direction: row;">
@@ -36,7 +36,7 @@
 			</view>
 		</view>
 
-		<button class='single-btn'>
+		<button @click="confirm" class='single-btn'>
 			<p class='chi'>确定</p>
 			<p style='font-weight: 500;' class='eng'>Confirm</p>
 		</button>
@@ -85,6 +85,11 @@
 			btnScan() {
 				uni.navigateTo({
 					url: '/pages/index/choose'
+				})
+			},
+			confirm() {
+				uni.navigateTo({
+					url:"/pages/index/index"
 				})
 			}
 		}
