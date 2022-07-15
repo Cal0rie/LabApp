@@ -3,14 +3,14 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "实验室器材管理系统"
 			}
 		}
 	    ,{
             "path" : "pages/auth/login",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "登录",
                 "enablePullDownRefresh": false
             }
             
@@ -19,7 +19,7 @@
             "path" : "pages/auth/register",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "注册",
                 "enablePullDownRefresh": false
             }
             
@@ -28,7 +28,7 @@
             "path" : "pages/index/choose",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "借还选择",
                 "enablePullDownRefresh": false
             }
             
@@ -37,7 +37,7 @@
             "path" : "pages/borrow/borrow",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "借用",
                 "enablePullDownRefresh": false
             }
             
@@ -46,7 +46,7 @@
             "path" : "pages/borrow/borrowFinish",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "借用",
                 "enablePullDownRefresh": false
             }
             
@@ -54,7 +54,7 @@
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "实验室器材管理系统",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}

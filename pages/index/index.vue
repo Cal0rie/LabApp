@@ -60,19 +60,21 @@
 
 <style scoped>
 	.eng{
-		
+		margin-left: 15rpx;
 	}
 	.chi{
+		font-weight: 600;
+		margin-left: 15rpx;
 		margin-bottom: -30rpx;
 	}
 	.row{
+		width: 100%;
 		display: flex;
+		justify-content : space-between;
 	}
 	.btns{
-		
 		width: 90%;
 		margin-top: 100rpx;
-		text-align: left;
 	}
 	.scan{
 		height: 130px;
@@ -83,28 +85,31 @@
 		border-radius: 30rpx;
 		display: flex;
 		justify-content: center;
+		align-items: flex-start;
 		flex-direction: column;
 	}
 	.history{
 		height: 130px;
 		background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);
 		width: 50%;
+		margin-right: 15px;
 		color: white;
-		margin-right: 20rpx;
 		border-radius: 30rpx;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		align-items: flex-start;
 	}
 	.feedback{
 		height: 130px;
-		background-image: linear-gradient(to bottom right, #2FDF71, #60ea98);
+		background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);
 		color: white;
 		width: 50%;
 		border-radius: 30rpx;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+		align-items: flex-start;
 	}
 	.content {
 		display: flex;
@@ -128,9 +133,4 @@
 		justify-content: center;
 	}
 
-	.title {
-		font-size: 45rpx;
-		color: #000000;
-		font-weight: 600;
-	}
 </style>
