@@ -41,6 +41,17 @@
 </template>
 
 <script>
+	// // #ifdef MP-WEIXIN
+	// const AV = require('/libs/av-core-min.js');
+	// const adapters = require('/libs/leancloud-adapters-weapp.js');
+	
+	// AV.setAdapters(adapters);
+	// AV.init({
+	// 	appId: "9YsunT1salRS9dw4y0gPdgj8-gzGzoHsz",
+	// 	appKey: "cbTyCF6sMJApRTHjJ68R0Gqz",
+	// 	serverURL: "https://labapi.mistletoe.top"
+	// });
+	// // #endif
 	export default {
 		data() {
 			return {
@@ -114,6 +125,9 @@
 
 				if (judge) {
 					console.log(this.form)
+					// AV.Cloud.run("writeLog", {
+					// 	operate: "borrow"
+					// })
 					this.$refs.uToast.show({
 						title: '登记完成',
 						type: 'primary',
