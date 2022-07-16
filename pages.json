@@ -82,7 +82,7 @@
             "path" : "pages/feedback/feedback",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "故障上报",
                 "enablePullDownRefresh": false
             }
             

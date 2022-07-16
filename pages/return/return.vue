@@ -12,7 +12,7 @@
 				<p class='chi'>归还完成</p>
 				<p class='eng'>Finish</p>
 			</button>
-			<button class='column-btn' style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
+			<button @click='cancel' class='column-btn' style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
 				<p class='chi'>取消归还</p>
 				<p class='eng'>Cancel</p>
 				</button>
@@ -35,6 +35,11 @@
 			finish(){
 				uni.navigateTo({
 					url:"/pages/return/returnFinish"
+				})
+			},
+			cancel(){
+				uni.redirectTo({
+					url:"/pages/index/index"
 				})
 			}
 		}
