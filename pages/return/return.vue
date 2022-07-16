@@ -2,18 +2,19 @@
 	<img class='Background' src="/static/校徽.webp">
 	<view class="content">
 		<view style='margin-top:300rpx' class="text-area">
-			<text class="title">{{title1}}</text></view>
+			<text class="title">{{title1}}</text>
 			<view style='margin-top:20rpx'
 			class="text-area"><text class="title">{{title2}}</text>
+			</view>
 		</view>
 		<view class='btns'>
-			<button class='column-btn' @click="btnBorrow" style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
-				<p class='chi'>借用</p>
-				<p class='eng'>Borrow</p>
+			<button @click="finish" class='column-btn' style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
+				<p class='chi'>归还完成</p>
+				<p class='eng'>Finish</p>
 			</button>
-			<button class='column-btn' @click="btnReturn" style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
-				<p class='chi'>归还</p>
-				<p class='eng'>Return</p>
+			<button class='column-btn' style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
+				<p class='chi'>取消归还</p>
+				<p class='eng'>Cancel</p>
 				</button>
 		</view>
 	</view>
@@ -23,22 +24,17 @@
 	export default {
 		data() {
 			return {
-				title1: 'Management System',
-				title2: '实验室器材管理系统'
+				title1: 'Please Return The Equipment',
+				title2: '柜门已开启，请归还器材'
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-			btnBorrow(){
+			finish(){
 				uni.navigateTo({
-					url:'/pages/borrow/borrowRegister'
-				})
-			},
-			btnReturn(){
-				uni.navigateTo({
-					url:"/pages/return/return"
+					url:"/pages/return/returnFinish"
 				})
 			}
 		}
@@ -46,6 +42,13 @@
 </script>
 
 <style scoped>
+	.text-area{
+		text-align: center;
+	}
+	.row{
+		display: flex;
+		flex-direction: column;
+	}
 	.btns{
 		
 		width: 90%;

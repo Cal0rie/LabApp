@@ -16,7 +16,7 @@
 				<p class='chi'>借用历史</p>
 				<p class='eng'>History</p>
 			</button>
-			<button class='feedback'>
+			<button @click='feedback' class='feedback'>
 				<p class='chi'>故障上报</p>
 				<p class='eng'>Feedback</p>
 				</button>
@@ -52,6 +52,11 @@
 			btnScan(){
 				uni.navigateTo({
 					url:'/pages/index/choose'
+				})
+			},
+			feedback(){
+				uni.navigateTo({
+					url:'/pages/feedback/feedback'
 				})
 			}
 		}

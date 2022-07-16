@@ -55,6 +55,33 @@
             "path" : "pages/borrow/borrowRegister",
             "style" :                                                                                    
             {
+                "navigationBarTitleText": "借用",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/return/return",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "归还",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+            "path" : "pages/return/returnFinish",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "归还",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/feedback/feedback",
+            "style" :                                                                                    
+            {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
