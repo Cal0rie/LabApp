@@ -22,4 +22,12 @@ export function createApp() {
 }
 // #endif
 
+//引入leancloud
+const AV = require('leancloud-storage');
+const { Query, User } = AV;
+AV.init({
+  appId: "9YsunT1salRS9dw4y0gPdgj8-gzGzoHsz",
+  appKey: "cbTyCF6sMJApRTHjJ68R0Gqz",
+  serverURL: "https://labapi.mistletoe.top"
+});
 

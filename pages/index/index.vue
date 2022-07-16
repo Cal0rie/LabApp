@@ -1,5 +1,5 @@
 <template>
-	<img class='Background' src="/static/校徽.webp">
+	<image class='Background' src="/static/校徽.png"/>
 	<view class="content">
 		<view style='margin-top:300rpx' class="text-area">
 			<text class="title">{{title1}}</text></view>
@@ -12,7 +12,7 @@
 			<p class='eng'>Scan QR-Code</p>
 			</button>
 		<view class='row'>
-			<button class='history'>
+			<button @click="history" class='history'>
 				<p class='chi'>借用历史</p>
 				<p class='eng'>History</p>
 			</button>
@@ -57,6 +57,11 @@
 			feedback(){
 				uni.navigateTo({
 					url:'/pages/feedback/feedback'
+				})
+			},
+			history(){
+				uni.navigateTo({
+					url:'/pages/history/history'
 				})
 			}
 		}

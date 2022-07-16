@@ -1,11 +1,6 @@
 <template>
-	<img class='Background' src="/static/校徽.webp">
+	<img class='Background' src="/static/校徽.png">
 	<view class="content">
-		<!-- <view style='margin-top:10rpx' class="text-area"></view>
-			<text class="title">{{title1}}</text>
-			<view style='margin-top:20rpx'
-			class="text-area"><text class="title">{{title2}}</text>
-		</view> -->
 
 		<view class='text'>
 			<!-- 			很抱歉<br>
@@ -124,6 +119,7 @@
 		text-align: left;
 		align-self: flex-start;
 		padding: 20rpx;
+		margin-left: 30rpx;
 		line-height: 60rpx;
 	}
 

@@ -6,9 +6,6 @@
 			<view style='margin-top:20rpx'
 			class="text-area"><text class="title">{{title2}}</text>
 		</view> -->
-		<view class='center-text'>
-			您已借用：
-		</view>
 		<view class="cards">
 			<view @click="" class='card' v-for="(item, index) in borrowedEquipment" :key="index">
 
@@ -31,6 +28,14 @@
 				<view>
 					<text class="label-text" style="">生产日期：</text>
 					<text class="id-text">{{item.date}}</text>
+				</view>
+				<view>
+					<text class="label-text" style="">借用日期：</text>
+					<text class="id-text">{{item.borrowDate}}</text>
+				</view>
+				<view>
+					<text class="label-text" style="">归还日期：</text>
+					<text class="id-text">{{item.borrowDate}}</text>
 				</view>
 
 			</view>
@@ -68,6 +73,8 @@
 					type: '一类设备',
 					e_id: 'YGSB',
 					date: '2022-7-13',
+					borrowDate: '2022-7-14',
+					returnDate: '2022-7-16',
 				},
 				{
 					e_number: '001',
@@ -75,6 +82,8 @@
 					type: '一类设备',
 					e_id: 'YGSB',
 					date: '2022-7-13',
+					borrowDate: '2022-7-14',
+					returnDate: '2022-7-16',
 				}]
 			}
 		},

@@ -31,6 +31,7 @@
 		height: 969rpx;
 		transform:translate(-400rpx);
 		opacity: 0.15;
+		visibility: visible;
 	}
 	
 	.title {
