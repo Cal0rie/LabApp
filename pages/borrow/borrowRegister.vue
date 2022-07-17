@@ -11,14 +11,14 @@
 		</view>
 		<img class='icon' src='/static/add.png' @click='addForm'>
 		<view class="cards">
-			<view class='card' v-for='(item,index) in form' :key='symbol(index)'>
+			<view class='card' v-for='(item,index) in form' :key='symbol(index)' :index='index'>
 				
 				<view class='form'>
 					<u-form :border-bottom='false'>
 						<u-form-item label-width='130' label="器材分类">
-							<u-input @click="typeShow = true" type='select' v-model='item.type' />
-							<u-action-sheet :list="typeList" v-model="typeShow" @click="chooseType($event,index)">
-							</u-action-sheet>
+							<u-input @click="typeChoose(index)" type='select' v-model='item.type' />
+							<!-- <u-action-sheet :list="typeList" v-model="typeShow" @click="chooseType($event,index)">
+							</u-action-sheet> -->
 						</u-form-item>
 						<u-form-item label-width='130' label='器材选择'>
 							<u-input v-model='item.equipment' />
@@ -36,8 +36,9 @@
 			<p class='chi'>提交</p>
 			<p style='font-weight: 500;' class='eng'>Submit</p>
 		</button>
+		<u-toast ref="uToast" />
 	</view>
-	<u-toast ref="uToast" />
+	
 </template>
 
 <script>
@@ -55,18 +56,7 @@
 	export default {
 		data() {
 			return {
-				typeShow: false,
-				//typeList: ['第一类', '第二类', '第三类'],
-				typeList: [{
-						text: "第一类",
-					},
-					{
-						text: '第二类',
-					},
-					{
-						text: '第三类',
-					}
-				],
+				typeList: ['第一类', '第二类', '第三类'],
 				title1: 'Management System',
 				title2: '实验室器材管理系统',
 				form: [{
@@ -92,23 +82,19 @@
 				}
 				this.form.push(temp)
 			},
-			chooseType(e, index) {
-				console.log("你选择了" + e)
-				console.log("这是第" + index + '张卡片')
-				this.form[index].type = this.typeList[e].text
-				// uni.showActionSheet({
-				// 	itemList: this.typeList,
-				// 	success: function(res) {
-				// 		const itemList = ['第一类', '第二类', '第三类']
-				// 		console.log('选中了第' + (res.tapIndex + 1) + '个按钮');
-				// 		console.log(itemList[res.tapIndex])
-				// 	},
-				// 	fail: function(res) {
-				// 		console.log(res.errMsg);
-				// 	},
-				// })
-
-				//this.form[index].type = this.typeList[e].text
+			typeChoose(index){
+				uni.showActionSheet({
+					itemList: this.typeList,
+					success: (res)=> {
+						//console.log('选中了第' + (res.tapIndex + 1) + '个按钮');
+						//console.log(itemList[res.tapIndex])
+						//console.log(this.typeList1)
+						this.form[index].type = this.typeList[res.tapIndex]
+					},
+					fail: (res)=> {
+						console.log(res.errMsg);
+					},
+				})
 			},
 			symbol(i){
 			   return Symbol(i)

@@ -12,12 +12,12 @@ app.$mount()
 
 // #ifdef VUE3
 import uView from './uni_modules/vk-uview-ui';
-import {
-	createSSRApp
-} from 'vue'
+//import Vant from '@vant/weapp'
+import {createSSRApp} from 'vue'
 export function createApp() {
 	const app = createSSRApp(App)
 	app.use(uView)
+	//app.use(Vant)
 	return {
 		app
 	}
