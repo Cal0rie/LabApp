@@ -1,7 +1,6 @@
 <template>
-	<a href="https://imgloc.com/image/lLpOI"><img class='Background' src="https://s1.328888.xyz/2022/07/18/lLpOI.png" alt="lLpOI.png" border="0" /></a>
+	<view class='Background'></view>
 	<view class="content">
-
 		<view class='text'>
 			<!-- 			很抱歉<br>
 			为您带来了不佳的使用体验<br> -->
@@ -75,8 +74,8 @@
 					type: '',
 					//e_id: '',
 					//date: '',
-					error:'',
-					position:''
+					error: '',
+					position: ''
 				},
 			}
 		},
@@ -84,7 +83,7 @@
 
 		},
 		methods: {
-			chooseType(e ) {
+			chooseType(e) {
 				this.form.type = this.typeList[e].text
 
 			},
@@ -92,21 +91,20 @@
 				this.form.position = this.positionList[e].text
 			},
 			submit() {
-				if(this.form.position&&this.form.type&&this.form.equipment&&this.form.error){
+				if (this.form.position && this.form.type && this.form.equipment && this.form.error) {
 					console.log(this.form)
 					this.$refs.uToast.show({
 						title: '感谢反馈',
 						type: 'primary',
 						url: '/pages/index/index'
 					})
-				}
-				else{
+				} else {
 					this.$refs.uToast.show({
 						title: '请完整填写表单',
 						type: 'warning',
 					})
 				}
-				
+
 			}
 		}
 	}

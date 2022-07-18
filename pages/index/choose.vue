@@ -1,10 +1,9 @@
 <template>
 	<view class="Background"/>
 	<view class="content">
-		<view style='margin-top:300rpx' class="text-area">
-			<text class="title">{{title1}}</text></view>
-			<view style='margin-top:20rpx'
-			class="text-area"><text class="title">{{title2}}</text>
+		<view class='title-area'>
+			<text class="" style="font-size: 45rpx;">{{title1}}</text>
+			<text class="title">{{title2}}</text>
 		</view>
 		<view class='btns'>
 			<button class='column-btn' @click="btnBorrow" style='background-image: linear-gradient(to bottom right, #7c7eff, #95B7FF);'>
@@ -47,9 +46,9 @@
 
 <style scoped>
 	.btns{
-		
+		position: absolute;
+		bottom: 20%;
 		width: 90%;
-		margin-top: 100rpx;
 		text-align: left;
 	}
 	.content {

@@ -18,11 +18,12 @@
 <style>
 	/*每个页面公共css */
 	.center-text {
-		font-size: 50rpx;
-		font-weight: 600;
+		font-size: 45rpx;
+		font-weight: bold;
 		text-align: left;
 		align-self: flex-start;
 		padding: 20rpx;
+		margin-left: 30rpx;
 	}
 	.Background{
 		z-index: -1;
@@ -38,9 +39,25 @@
 	.title {
 		font-size: 45rpx;
 		color: #000000;
-		font-weight: 600;
+		font-weight: bold;
 	}
-	
+	.btns {
+		position: absolute;
+		width: 80%;
+		bottom: 20%;
+	}
+	.title-area {
+		position: absolute;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		top: 6%;
+		left: 12%;
+	}
+	.text-area {
+		text-align: center;
+	}
 	.single-btn {
 		height: 200rpx;
 		background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);
@@ -69,7 +86,7 @@
 		margin-left: 15rpx;
 	}
 	.chi{
-		font-weight: 600;
+		font-weight: bold;
 		margin-left: 15rpx;
 		margin-bottom: -30rpx;
 	}
