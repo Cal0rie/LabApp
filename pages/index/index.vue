@@ -1,6 +1,6 @@
 <template>
-	<image class='Background' src="/static/校徽.png"/>
-	<view class="content">
+	<view class='Background'/>
+		<view class="content">
 		<view style='margin-top:300rpx' class="text-area">
 			<text class="title">{{title1}}</text></view>
 			<view style='margin-top:20rpx'

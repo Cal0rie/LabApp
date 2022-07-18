@@ -27,11 +27,12 @@
 	.Background{
 		z-index: -1;
 		position: fixed;
-		width: 1000rpx;
-		height: 969rpx;
-		transform:translate(-400rpx);
+		width: 100%;
+		height: 100%;
 		opacity: 0.15;
-		visibility: visible;
+		background: url(https://s1.328888.xyz/2022/07/18/lLpOI.png) no-repeat;
+		background-position: 160% 0%;
+		background-size: 145%;
 	}
 	
 	.title {

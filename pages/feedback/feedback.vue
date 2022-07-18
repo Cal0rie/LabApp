@@ -1,5 +1,5 @@
 <template>
-	<img class='Background' src="/static/校徽.png">
+	<a href="https://imgloc.com/image/lLpOI"><img class='Background' src="https://s1.328888.xyz/2022/07/18/lLpOI.png" alt="lLpOI.png" border="0" /></a>
 	<view class="content">
 
 		<view class='text'>
