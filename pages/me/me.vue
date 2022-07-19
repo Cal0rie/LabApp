@@ -70,17 +70,17 @@
 		margin: 0rpx 30rpx 0rpx 30rpx;
 	}
 	.avatar-box {
-		padding-top: 20px;
-		padding-right: 80px;
+		padding-top: 30rpx;
+		padding-right: 120rpx;
 		height: 130px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 	.cell-board{
-		margin-left: 30px;
-		margin-right: 30px;
-		padding: 15px;
+		margin-left: 50rpx;
+		margin-right: 50rpx;
+		padding: 30rpx;
 		text-align: center;
 		display: flex;
 		justify-content: center;
@@ -93,10 +93,10 @@
 		width: 95%;
 	}
 	.data-board{
-		margin-left: 30px;
-		margin-right: 30px;
-		margin-bottom: 20px;
-		padding: 15px;
+		margin-left: 50rpx;
+		margin-right: 50rpx;
+		margin-bottom: 30rpx;
+		padding: 15rpx;
 		text-align: center;
 		display: flex;
 		justify-content: center;

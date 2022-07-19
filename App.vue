@@ -43,7 +43,7 @@
 	}
 	.btns {
 		position: absolute;
-		width: 80%;
+		width: 85%;
 		bottom: 15%;
 	}
 	.title-area {
@@ -53,7 +53,7 @@
 		align-items: flex-start;
 		flex-direction: column;
 		top: 6%;
-		left: 12%;
+		left: 9%;
 	}
 	.text-area {
 		text-align: center;
