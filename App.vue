@@ -84,6 +84,7 @@
 	}
 	.eng{
 		margin-left: 15rpx;
+		font-weight: thin;
 	}
 	.chi{
 		font-weight: bold;

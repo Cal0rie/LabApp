@@ -10,11 +10,11 @@
 		</view>
 		<view class="data-board">
 			<view class="singleData" @click="toBeReturned">
-				<view class="red">{{released.length}}</view>
+				<view class="red">{{toBeReturnedForm.length}}</view>
 				<view class="gray">待归还</view>
 			</view>
 			<view class="singleData" @click="returned">
-				<view class="red">{{snatched.length}}</view>
+				<view class="red">{{returnedForm.length}}</view>
 				<view class="gray">已归还</view>
 			</view>
 		</view>
@@ -36,8 +36,8 @@
 				src: '/static/avatar.png',
 				userID: "无名",
 				userIntro:'该用户未设置简介',
-				released: [],
-				snatched: [],
+				returnedForm: [],
+				toBeReturnedForm: [],
 				income: "12.00",		//今日收入
 			}
 		},
@@ -67,7 +67,7 @@
 <style scoped>
 	.singleData{
 		padding: 20rpx;
-		margin: 0rpx 30rpx 0rpx 30rpx;
+		margin: 0rpx 50rpx 0rpx 50rpx;
 	}
 	.avatar-box {
 		padding-top: 30rpx;
@@ -107,7 +107,7 @@
 	}
 	.red{
 		font-size: 20px;
-		color: #F0604D;
+		color: #72246C;
 	}
 	.gray{
 		color: #B5BCC7;

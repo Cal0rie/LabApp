@@ -1,10 +1,11 @@
 <template>
+	<view class='Background'/>
 	<view class="wrap">
 		<u-toast ref="uToast" ></u-toast>
 		<view class="top"></view>
 		<view class="content">
-			<view class="title">欢迎登录教考系统</view>
-			<input class="u-border-bottom" type="number" v-model="tel" placeholder="请输入手机号" />
+			<view class="title">欢迎登录</view>
+			<input class="u-border-bottom" type="number" v-model="tel" placeholder="请输入学号/工号" />
 			<input class="u-border-bottom" type="password" v-model="pas" placeholder="请输入密码" />
 			<button :disabled="disabled" @tap="submit" :style="[inputStyle]" class="getCaptcha">登录</button>
 			<view class="alternative">
@@ -37,8 +38,8 @@ export default {
 			};
 			if(this.tel&&this.pas) {
 				this.disabled= false;
-				style.color = "#fff";
-				style.backgroundColor = "#f9ae3d";
+				style.color = "#ffffff";
+				style.backgroundColor = "#72246C";
 			}
 			return style;
 		}
@@ -115,9 +116,10 @@ export default {
 			padding-bottom: 6rpx;
 		}
 		.getCaptcha {
-			background-color: rgb(253, 243, 208);
-			color: $u-tips-color;
+			background-color: #ecdaeb;
+			color: #ffffff;
 			border: none;
+			border-radius: 20rpx;
 			font-size: 30rpx;
 			padding: 12rpx 0;
 			
