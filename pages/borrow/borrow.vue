@@ -1,10 +1,9 @@
 <template>
 	<view class="Background"/>
 	<view class="content">
-		<view style='margin-top:300rpx' class="text-area">
-			<text class="title">{{title1}}</text>
-			<view style='margin-top:20rpx'
-			class="text-area"><text class="title">{{title2}}</text>
+		<view style='margin-top:20%' class="text-area">
+			<text style="font-size: 40rpx;">{{title1}}</text>
+			<view style='margin-top:20rpx'><text class="title">{{title2}}</text>
 			</view>
 		</view>
 		<view class='btns'>
@@ -12,7 +11,7 @@
 				<p class='chi'>拿取完成</p>
 				<p class='eng'>Finish</p>
 			</button>
-			<button class='column-btn' style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
+			<button @click="cancel" class='column-btn' style='background-image: linear-gradient(to bottom right, #2cd66b, #46dc64);'>
 				<p class='chi'>取消拿取</p>
 				<p class='eng'>Cancel</p>
 				</button>
@@ -44,6 +43,11 @@
 
 		},
 		methods: {
+			cancel(){
+				uni.switchTab({
+					url:'/pages/index/index'
+				})
+			},
 			finish(){
 				uni.navigateTo({
 					url:"/pages/borrow/borrowFinish"

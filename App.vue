@@ -44,7 +44,7 @@
 	.btns {
 		position: absolute;
 		width: 80%;
-		bottom: 20%;
+		bottom: 15%;
 	}
 	.title-area {
 		position: absolute;

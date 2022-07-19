@@ -95,6 +95,15 @@
                 "enablePullDownRefresh": false
             }
             
+        },
+		{
+            "path" : "pages/me/me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
 	"globalStyle": {
@@ -102,5 +111,24 @@
 		"navigationBarTitleText": "实验室器材管理系统",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"height": "70px",
+		"borderStyle": "white",
+		"color": "#D0D2DC",
+		"selectedColor": "#72246C",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/icons/home-fill (1).png",
+			"selectedIconPath": "static/icons/home-fill.png",
+			"text": "主页"
+		},
+		{
+			"pagePath": "pages/me/me",
+			"iconPath": "static/icons/account (1).png",
+			"selectedIconPath": "static/icons/account.png",
+			"text": "我的"
+		}]
 	}
 }

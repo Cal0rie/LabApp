@@ -40,24 +40,6 @@
 
 			</view>
 		</view>
-
-		<button @click="confirm" class='single-btn'>
-			<p class='chi'>确定</p>
-			<p style='font-weight: 500;' class='eng'>Confirm</p>
-		</button>
-
-
-		<!-- <u-row>
-			<u-col span='10'>
-				<view class='scan'></view>
-			</u-col>
-			<u-col span='5'>
-				<view class='history'></view>
-			</u-col>
-			<u-col span='5'>
-				<view class='feedback'></view>
-			</u-col>
-		</u-row> -->
 	</view>
 </template>
 
@@ -96,11 +78,6 @@
 					url: '/pages/index/choose'
 				})
 			},
-			confirm() {
-				uni.redirectTo({
-					url:'/pages/index/index'
-				})
-			}
 		}
 	}
 </script>
@@ -142,6 +119,7 @@
 	}
 
 	.content {
+		margin-top: 20rpx;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
