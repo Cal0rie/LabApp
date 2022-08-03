@@ -1,3 +1,4 @@
 # My configurations:
-unpackage/dist/
+unpackage/
 node_modules/
+.hbuilderx/

@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "js-cookie": "^3.0.1",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "unplugin-vue-components": "^0.21.1"
